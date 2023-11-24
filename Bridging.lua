@@ -1,12 +1,13 @@
 -- Main -- 
 while 1 do
-  detectD()
+  detectF()
   detectT()
-  placeB())
+  detectD()
+  placeB()
 end
 
 -- Detecting Front Block -- 
-function detectD()
+function detectF()
   checkFuel()
   while turtle.detect() do
     turtle.dig()
@@ -19,6 +20,14 @@ function detectT()
   checkFuel()
   while turtle.detectUp() do
     turtle.digUp()
+  end
+end
+
+-- Detecting Bottom Block --
+function detectB()
+  checkFuel()
+  while turtle.detectDown() do
+    turtle.digDown()
   end
 end
 
