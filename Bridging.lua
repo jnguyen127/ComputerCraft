@@ -1,11 +1,3 @@
--- Main -- 
-while 1 do
-  detectF()
-  detectT()
-  detectD()
-  placeB()
-end
-
 -- Detecting Front Block -- 
 function detectF()
   checkFuel()
@@ -70,4 +62,12 @@ function checkFuel()
             end
         end
     end
+end
+
+-- Main -- 
+while 1 do
+  detectF()
+  detectT()
+  detectD()
+  placeB()
 end
