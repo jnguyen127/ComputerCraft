@@ -32,10 +32,10 @@ function placeB()
         if (turtle.getItemDetail(i).name ~= "minecraft:cobbled_deepslate" and i < 16) then
             i = i + 1
         elseif turtle.getItemDetail(i).name == "minecraft:cobbled_deepslate" and turtle.getItemCount(i) > 1 then
-            turtle.place()
+            turtle.placeDown()
             break
         else
-            print("No more stairs! :(")
+            print("No more blocks! :(")
             while 1 do 
             end
         end
