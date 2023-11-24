@@ -38,7 +38,7 @@ function placeB()
     while i <= 16
     do
         turtle.select(i)
-        if (turtle.getItemDetail(i).name != "minecraft:cobbled_deepslate" and i < 16) then
+        if (turtle.getItemDetail(i).name ~= "minecraft:cobbled_deepslate" and i < 16) then
             i = i + 1
         elseif turtle.getItemDetail(i).name == "minecraft:cobbled_deepslate" and turtle.getItemCount(i) > 1 then
             turtle.place()
