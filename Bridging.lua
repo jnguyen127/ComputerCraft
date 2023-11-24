@@ -27,8 +27,7 @@ end
 function placeB()
   checkFuel()
   i = 1
-    while i <= 16
-    do
+    while i <= 16 do
         turtle.select(i)
         if (turtle.getItemDetail(i).name ~= "minecraft:cobbled_deepslate" and i < 16) then
             i = i + 1
@@ -38,6 +37,7 @@ function placeB()
         else
             print("No more stairs! :(")
             while 1 do 
+            end
         end
     end
 end
